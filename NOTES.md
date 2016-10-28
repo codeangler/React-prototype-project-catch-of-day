@@ -1,6 +1,19 @@
 // notes from catch of day
 completed video {1, 2, 3, }
 
+## video 15 Displaying Data with JSX
+<ul>
+  <li>min 3    Object.keys()  returns an array that can then be looped over with .map()</li>
+  <li></li>
+  <li>min 5,   React wants unique ids of comopnet  called key on new HTML element,  in this case passing the Key obj works</li>
+  <li></li>
+  <li>when passing a variable to attribute in JSX no need for "", just e.g. alt={this.props.details.name}</li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+
 ## video 13 understanding State
 <ul>
   <li>00.45  state is a REPRESENTATION of all data in application ///  state is like one object that holds all data for either component / piece or entire application </li>
@@ -15,12 +28,21 @@ completed video {1, 2, 3, }
   <li>min 10.33 Now that we have our fish object, how do we get it into our state</li>
   <li>State is tied to a component // or // app , so to share data, put data on state on app which is a parent </li>
   <li>11.10  get initial state,  </li>
-  <li></li>
+  <li></li>`
   <li>min 14:07  when you want to update state there are several states to do   </li>
   <li>14.25 best practice to make a copy of state prior to manipulating || for performance and not exercise </li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>const fishes = { ... this.state.fishes} // ... is a spread, will take each item from object and spread it into this object....in other words making copy.</li>
+  <li>min 16.00  set up time stamp and pass the who addfishform object fish{} to fishes{} data object</li>
+  <li>17.45 but state hasn't been update... have to explicitly telling state which state to update
+  Rx doesn't just watch.  we tell them, hey we updated this piece of state, so do something
+  </li>
+  <li>19.00 {fishes: fishes} in es6 same as {fishes}</li>
+  <li>20.00 need to add the addFish() to the constructor within App </li>
+  <li>20.54  how do we take addFish to app.js // how do I call it from a childcomponent a few levels deep.</li>
+  <li>./app.js  in the component <inventory />  add the props  <inventory addFish={this.addFish}/> and it is now available to that component</li>
+  <li>./inventory.js pass down to the <AddFishForm addFish={this.props.addFish}/> *** NOTE THE PROPS whenever data or state are passed it is passed by props.</li>
+  <li>pass this method into the addFishForm object and return it with the fish(signular) object</li>
+  <li>22.59 clear form  add ref to form, and call JS reset on fishForm.reset();</li>
   <li></li>
 </ul>
 
