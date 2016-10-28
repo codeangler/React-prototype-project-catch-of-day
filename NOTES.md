@@ -3,14 +3,21 @@ completed video {1, 2, 3, }
 
 ## video 13 understanding State
 <ul>
+  <li>00.45  state is a REPRESENTATION of all data in application ///  state is like one object that holds all data for either component / piece or entire application </li>
+  <li>like one big Object, we edit the DATA w/n React and React will update DOM with state change</li>
   <li>state refers a point in time DATA</li>
   <li>state is tied to App component  min 10.50</li>
   <li>get initial state </li>
   <li>Best practice is copy initial state before manipulating it</li>
   <li>min 21:45  way to pass down the tree is with props</li>
   <li></li>
+  <li>min 8.30  How do I get text from inputs into an Object of component? </li>
+  <li>min 10.33 Now that we have our fish object, how do we get it into our state</li>
+  <li>State is tied to a component // or // app , so to share data, put data on state on app which is a parent </li>
+  <li>11.10  get initial state,  </li>
   <li></li>
-  <li></li>
+  <li>min 14:07  when you want to update state there are several states to do   </li>
+  <li>14.25 best practice to make a copy of state prior to manipulating || for performance and not exercise </li>
   <li></li>
   <li></li>
   <li></li>
