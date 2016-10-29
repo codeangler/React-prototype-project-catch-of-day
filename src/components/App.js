@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Order from './Order';
 import Fish from './Fish';
+import base from '../base';
 import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
 
