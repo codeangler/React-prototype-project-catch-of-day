@@ -1,6 +1,53 @@
 // notes from catch of day
 completed video {1, 2, 3, }
 
+## video 18 Persisting our state with Firebase
+<ul>
+  <li>firebase from google using something called HTML5 websockets</li>
+  <li>allows for backend db that is real time</li>
+  <li>data is synced to everyone's computer</li>
+  <li>can think of fb as one big object</li>
+  <li></li>
+  <li>min 5  using rebase, base.js   import Rebase from 're-base', create connection to Firebase</li>
+  <li></li>
+  <li>min 6.45  React Lifecyle hooks</li>
+  <li>componentWillMount() // reserved by Rx  allows the split second before rendering to sync component state with Firebase</li>
+  <li>// invoked once on client and server.  </li>
+  <li>// </li>
+  <li> params accessed from Props, accessed from ReactRouter() which is parent of ./App.js </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+## video 17 displaying order state with JSX
+<ul>
+  <li>min 1  pass through <ORDER /> compent props and state </li>
+  <li>not a good practice to pass whole state just pick and choose what you need</li>
+  <li></li>
+  <li>min 6 instead of a new component, making a render function</li>
+  <li>min 7.50  this is, IMHO, is compariable to ng-repeat, using .map({this.render})</li>
+ 
+</ul>
+
+## video 16 updating Order State
+<ul>
+  <li>dynamic text in the "add to order button"</li>
+  <li></li>
+  <li></li>
+  <li>add method addToOrder w/n  App.js</li>
+  <li>min 7  How do you add a value to method in a component</li>
+  <li>min 7.45   opt 1:    this.props.addToOrder.bind(null</li>
+  <li>min 8.20 can not access key (reserved rx word) inside component; </li>
+  <li>min 9  store key w/n your own props   </li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+
 ## video 15 Displaying Data with JSX
 <ul>
   <li>min 3    Object.keys()  returns an array that can then be looped over with .map()</li>
