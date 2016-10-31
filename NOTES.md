@@ -1,5 +1,30 @@
 // notes from catch of day
-completed video {1, 2, 3, }
+
+## video 20  bi-directional Data Flow and Live State Editing
+<ul>
+  <li>min 5  React expects state in an input is going to change</li>
+  <li>6.40 we need to listen for a change event on each of the inputs</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>min 12 see the flow data after integration!!</li>
+  <li></li>
+</ul>
+
+## video 19 Persisting with localstorage
+<ul>
+  <li>go to rx lifecycle methods</li>
+  <li>see componentWillUpdate()</li>
+  <li></li>
+  <li>local storage doesn't contain objects</li>
+  <li>using JSON.stringify() to store a string</li>
+  <li>then use JSON>parse() to unpack after confirming </li>
+  <li></li>
+  <li>shouldComponentUpdate()  might be used to minimize the double rendering </li>
+  <li></li>
+</ul>
+
 
 ## video 18 Persisting our state with Firebase
 <ul>
