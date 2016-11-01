@@ -10,6 +10,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.addFish = this.addFish.bind(this);
+    this.updateFish = this.updateFish.bind(this);
     this.loadSamples = this.loadSamples.bind(this);
     this.addToOrder = this.addToOrder.bind(this);
     // getinitialState, 
@@ -60,6 +61,15 @@ class App extends React.Component {
     this.setState({ fishes })
   }
 
+  updateFish(key, updatedFish) {
+    // make a copy of current state
+    const fishes = {...this.state.fishes};
+    // pass in the updatedFish from <Inventory />
+    fishes[key] = updatedFish;
+    // update state
+    this.setState({ fishes });
+  }
+
   loadSamples(){
     this.setState({
       fishes: sampleFishes
@@ -99,6 +109,8 @@ class App extends React.Component {
         <Inventory 
           addFish={this.addFish}
           loadSamples={this.loadSamples}
+          fishes={this.state.fishes}
+          updateFish={this.updateFish}
         />
       </div>
     )
