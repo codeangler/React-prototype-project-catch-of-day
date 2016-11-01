@@ -11,8 +11,10 @@ class App extends React.Component {
     super();
     this.addFish = this.addFish.bind(this);
     this.updateFish = this.updateFish.bind(this);
+    this.removeFish = this.removeFish.bind(this);
     this.loadSamples = this.loadSamples.bind(this);
     this.addToOrder = this.addToOrder.bind(this);
+    this.removeFromOrder = this.removeFromOrder.bind(this);
     // getinitialState, 
     // but this is using ES6 constructors
     this.state = {
@@ -70,6 +72,15 @@ class App extends React.Component {
     this.setState({ fishes });
   }
 
+  removeFish(key, updatedFish) {
+    // make a copy of current state
+    const fishes = {...this.state.fishes};
+    // set to null b/c of Firebase
+    fishes[key] = null
+    // update state
+    this.setState({ fishes });
+  }
+
   loadSamples(){
     this.setState({
       fishes: sampleFishes
@@ -81,6 +92,15 @@ class App extends React.Component {
     const order = {...this.state.order};
     // update or add the new number of fish ordered
     order[key] = order[key] + 1 || 1;
+    // update our state
+    this.setState({ order });
+  }
+
+  removeFromOrder(key){
+    // take a copy of our state
+    const order = {...this.state.order};
+    // update or add the new number of fish ordered
+        delete order[key];
     // update our state
     this.setState({ order })
   }
@@ -105,12 +125,15 @@ class App extends React.Component {
           fishes={this.state.fishes}
           order={this.state.order}
           params={this.props.params}
+          removeFromOrder={this.removeFromOrder}
         />
         <Inventory 
           addFish={this.addFish}
           loadSamples={this.loadSamples}
           fishes={this.state.fishes}
           updateFish={this.updateFish}
+          removeFish={this.removeFish}
+
         />
       </div>
     )
