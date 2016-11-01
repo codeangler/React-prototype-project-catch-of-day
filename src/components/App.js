@@ -6,9 +6,6 @@ import base from '../base';
 import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
 
-import Fish from './Fish';
-import base from '../base';
-
 class App extends React.Component {
   constructor() {
     super();
