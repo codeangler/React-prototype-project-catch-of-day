@@ -1,4 +1,28 @@
 // notes from catch of day
+## v21  Animation w/ React
+<ul>
+  <li>npm run start && npm run styles //  I got an error with " npm run watch "</li>
+  <li>there was a error with WINDOW github see pull request fix/li>
+  <li></li>
+  <li>import CSSTransitionGroup from 'react-addons-css-transition-group';</li>
+  <li>preprocessor _animation </li>
+  <li>
+    
+.order-enter
+  transition all 0.5s
+  transform translateX(-120%) 
+  max-height 0
+  padding 0 !important
+  &.order-enter-active
+    transform translateX(0)  
+    max-height 60px
+    padding 2rem 0 !important
+
+    
+  </li>
+  <li></li>
+  <li></li>
+</ul>
 
 ## video 20  bi-directional Data Flow and Live State Editing
 <ul>
