@@ -1,5 +1,21 @@
 // notes from catch of day
-## v21  Animation w/ React
+
+
+## v23  Component validation w/ PropTypes
+<ul>
+  <li>if you pass prop, you should define PropType min</li>
+  <li></li>
+  <li>proptype validation w/n documentation </li>
+  <li>https://facebook.github.io/react/docs/typechecking-with-proptypes.html</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+## v22  Animation w/ React
+
 <ul>
   <li>npm run start && npm run styles //  I got an error with " npm run watch "</li>
   <li>there was a error with WINDOW github see pull request fix/li>
@@ -18,7 +34,7 @@
     max-height 60px
     padding 2rem 0 !important
 
-    
+
   </li>
   <li></li>
   <li></li>
