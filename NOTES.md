@@ -2,7 +2,20 @@
 
 
 ##26 Now SH
+sign up
 
+get into your build directory
+$ns //  will temporarily url serving
+ but it won't work
+
+$ns --cmd "list ./content -s"   /// this is to pass to Now Sh to serve up just index.html // ./content is NowSH, and -s refers to single page
+
+could make an npm script
+in /package.json
+
+"deploy": "ns ./build --cmd 'list ./content -s'"  // note ''  and adding ./build
+
+may need to add domain to NOw.sh to Firebase > Authentication > sign-in method 
 
 
 
