@@ -1,16 +1,22 @@
 // notes from catch of day
 
 
+##26 Now SH
+
+
+
+
 ##25  Building React for Production
 <ul>
   <li>Create React App , has a build step, see package.json</li>
   <li>npm run build</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>  </li>
+  <li>Options for hosting / serving</li>
+  <ul>
+    <li>Now sh</li>
+    <li>github pages</li>
+    <li></li>
+    <li></li></ul>
 </ul>
 
 ## v24  firebase validation // authorization
