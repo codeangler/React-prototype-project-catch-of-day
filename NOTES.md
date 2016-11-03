@@ -1,5 +1,56 @@
 // notes from catch of day
 
+#30 Ejecting form from create-react-app  "CRA"
+<ul>
+  <li>CRA, out of box to build but if you want to customize webpack</li>
+  <li>ejecting is one way and you can't uneject</li>
+  <li>START A NEW BRANCH on github</li>
+  <li>npm run eject</li>
+  <li>>>> checkout <<<   git status</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+#29 Future React Today -- Property Initializers and getting rid of .bind()
+<ul>
+  <li>in stage 2  </li>
+  <li>min 2.30 use arrow function to bound to parent  **  and add ; at the end, very important</li>
+  <li>then can remove the this.bind() from </li>
+  <li></li>
+  <li></li>
+  <li>min 5 could remove state from constructor and initialize it with App </li>
+  <li>5.45  adding Static infront of propTypes</li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+## 28  deploying to apache // php
+<ul>
+  <li>if putting in subdirectory</li>
+  <li>FTP client</li>
+  <li>add all build to </li>
+  <li>add domain to sign-up</li>
+  <li>problem:  refresh fails // becuase server isn't routing the front end is</li>
+  <li>create a .htaccess in build</li>
+  <li>or  nginx app  "search  nginx single page file" </li>
+  <li></li>
+</ul>
+
+##27 github.io
+// a bit hacky, should be avoided
+<ul>
+  <li>need to add homepage param in package.json</li>
+  <li>need to run React Router in subfolder  /index.js   basename={}</li>
+  <li>cd in build /// could make a git sub module for the build if you already have</li>
+  <li></li>
+  <li>min 5.25  github doesn't really alow routing</li>
+  <li>dupliate index.html to 404.html</li>
+  <li></li>
+  <li></li>
+</ul>
 
 ##26 Now SH
 sign up

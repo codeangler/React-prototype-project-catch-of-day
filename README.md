@@ -7,6 +7,7 @@ This project was completed as part of my studies of React.
 Following technologies were used:
 <ul>
   <li>Webpack</li>
+  <li>Babel</li>
   <li>React</li>
   <li>Stylus (css preprocessor)</li>
   <li>Firebase</li>
