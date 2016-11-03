@@ -1,6 +1,38 @@
 // notes from catch of day
 
 
+##25  Building React for Production
+<ul>
+  <li>Create React App , has a build step, see package.json</li>
+  <li>npm run build</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+## v24  firebase validation // authorization
+<ul>
+  <li>setting up Firebase w/ FB</li>
+  <li>don't ever put App Secret in any client side application</li>
+  <li>all the information goes into Firebase</li>
+  <li></li>
+  <li>min 7 need to set owner & uid to null w/n the constructor function </li>
+  <li>min 10.15 set up authenticate with base.AuthWithOAuthPopup()</li>
+
+  <li>min 17.30 using lifecycle hook CompenenetDidMount</li>
+  <li></li>
+  <li>min 21  logout onClick doesn't require anym func as no Arguments are being passed</li>
+
+  <li>set Firebase security rules</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
 ## v23  Component validation w/ PropTypes
 <ul>
   <li>if you pass prop, you should define PropType min</li>
