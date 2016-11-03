@@ -6,12 +6,14 @@ import base from '../base';
 class Inventory extends React.Component {
   constructor() {
     super();
-    this.renderInventory = this.renderInventory.bind(this);
-    this.renderLogin = this.renderLogin.bind(this);
-    this.authenticate = this.authenticate.bind(this);
-    this.logout = this.logout.bind(this);
-    this.authHandler = this.authHandler.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    // update with es6 () => {};  !!! ";"
+    // this.renderInventory = this.renderInventory.bind(this);
+    // this.renderLogin = this.renderLogin.bind(this);
+    // this.authenticate = this.authenticate.bind(this);
+    // this.logout = this.logout.bind(this);
+    // this.authHandler = this.authHandler.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+  
     this.state = {
       uid: null,
       owner: null
@@ -27,7 +29,7 @@ class Inventory extends React.Component {
     });
   }
 
-  handleChange(e, key) {
+  handleChange = (e, key) => {
     const fish = this.props.fishes[key];
     // take a copy of that fish and update it with the new data
     const updatedFish = {
@@ -35,19 +37,19 @@ class Inventory extends React.Component {
       [e.target.name]: e.target.value
     }
     this.props.updateFish(key, updatedFish);
-  }
+  };
 
-  authenticate(provider) {
+  authenticate = (provider) => {
     console.log(`Trying to login with ${provider}`);
     base.authWithOAuthPopup(provider, this.authHandler);
-  }
+  };
 
-  logout() {
+  logout = () => {
     base.unauth();
     this.setState({uid: null})
-  }
+  };
 
-  authHandler(err, authData) {
+  authHandler = (err, authData) => {
     console.log(authData);
     
     if(err) {
@@ -75,9 +77,9 @@ class Inventory extends React.Component {
         owner: data.owner || authData.user.uid
       });
     });
-  }
+  };
 
-  renderLogin() {
+  renderLogin = () => {
     return(
         <nav className="login">
           <h2>Inventory</h2>
@@ -87,9 +89,9 @@ class Inventory extends React.Component {
           <button className="twitter" onClick={() => this.authenticate('twitter')}>Login with Twitter</button>
         </nav>
       ) 
-  }
+  };
 
-  renderInventory(key) {
+  renderInventory = (key) => {
     const fish = this.props.fishes[key]; // this is accessing state passed down from <App /> component
 
     return(
@@ -98,7 +100,7 @@ class Inventory extends React.Component {
       <input type="text" name="price" value={fish.price} placeholder="Fish price" onChange={(e) => this.handleChange(e, key)}/>
       <select type="text" name="status" value={fish.status} placeholder="Fish status" onChange={(e) => this.handleChange(e, key)}>
         <option value="available">Fresh!</option>
-        <option value="unavailable">Sold</option>
+        <option value="unavailable">Sold Out!</option>
       </select>
       <textarea type="text" name="desc" value={fish.desc} placeholder="Fish desc" onChange={(e) => this.handleChange(e, key)}>
       </textarea>
@@ -106,7 +108,7 @@ class Inventory extends React.Component {
       <button onClick={() => this.props.removeFish(key)}>Remove Fish</button>
       </div>
       )
-  }
+  };
 
   render() {
     const logout = <button onClick={this.logout}>Log Out!</button>;
@@ -136,9 +138,8 @@ class Inventory extends React.Component {
       </div>
     )
   }
-}
 
-Inventory.propTypes = {
+static propTypes = {
   fishes : React.PropTypes.object.isRequired,
   updateFish : React.PropTypes.func.isRequired,
   removeFish : React.PropTypes.func.isRequired,
@@ -146,5 +147,9 @@ Inventory.propTypes = {
   loadSamples : React.PropTypes.func.isRequired,
   storeId : React.PropTypes.string.isRequired
 };
+
+}
+
+
 
 export default Inventory;

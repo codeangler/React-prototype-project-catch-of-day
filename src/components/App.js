@@ -18,11 +18,16 @@ class App extends React.Component {
     // getinitialState, 
     // but this is using ES6 constructors
 
-    this.state = {
+    // this.state = {
+    //   fishes: {},
+    //   order: {}
+    // };
+  }
+
+  state = {
       fishes: {},
       order: {}
     };
-  }
 
   componentWillMount() {
     // this runs just before the <App /> is rendered

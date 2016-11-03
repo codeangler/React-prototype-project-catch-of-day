@@ -12,6 +12,7 @@ Following technologies were used:
   <li>Stylus (css preprocessor)</li>
   <li>Firebase</li>
   <li>OAuth with Firebase</li>
+  <li>Deployed Build to Now.sh & Apache Server</li>
 </ul>
 
 Not a single line of React was copied and pasted. As part of the tutorial some CSS was premade as the focus was on React and React component construction. All my notes(though cryptic) can be found in NOTES.md

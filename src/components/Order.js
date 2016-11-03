@@ -30,6 +30,7 @@ class Order extends React.Component {
       </CSSTransitionGroup>
       lbs {fish.name} {removeButton}
       </span>
+      Total: 
       <span className="price">{formatPrice(count * fish.price)}</span>
      
       </li>
@@ -59,6 +60,7 @@ class Order extends React.Component {
           >
            {orderIds.map(this.renderOrder)}
           <li className="total">
+            <strong>Total:</strong>
             {formatPrice(total)}
           </li>
         </CSSTransitionGroup>
