@@ -1,6 +1,8 @@
 # React-prototype-project-catch-of-day
 
-This is a React.js project integrated with Firebase and uses React Animations.
+##This is a React.js project integrated with Firebase and uses React Animations.
+Visit a fictitious fish market and place an order. If you want sign-in and be a store manager.  Add, delete, modify your inventory.
+ <a href="https://ns-esvdtsolee.now.sh/">Catch of the Day</a>
 
 This project was completed as part of my studies of React.
 
